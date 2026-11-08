@@ -1,0 +1,8 @@
+Options -Indexes
+DirectoryIndex index.php
+
+<IfModule mod_authz_core.c>
+    <FilesMatch "(?i)\.(sql|md|log|ini|env)$">
+        Require all denied
+    </FilesMatch>
+</IfModule>
